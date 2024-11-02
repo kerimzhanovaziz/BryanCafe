@@ -2,8 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #282828;
+    background-color: #000;
     color: #fff;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden; 
 }
 
 nav {
@@ -13,26 +18,23 @@ nav {
     width: 100%;
     background-color: transparent;
     color: #fff;
-    padding: 30px;
-    padding-left: 500px;
+    padding: 30px 20px; /* Adjusted for responsive padding */
     display: flex;
-    justify-content: center; /* Center-aligns the nav items */
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
     z-index: 3;
-}
-
-nav h1 {
-    display: none; /* Hides the logo if it's not needed */
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    margin-right: 300px;
+    margin: 0;
     padding: 0;
+    margin-right: 150px;
 }
 
 nav ul li {
-    margin-left: 100px; /* Space between the items */
+    margin-left: 70px; /* Reduced space for better mobile view */
 }
 
 nav ul li a {
@@ -41,11 +43,13 @@ nav ul li a {
     font-size: 1.1em;
 }
 
-
+.logo-container {
+    margin-right: auto;
+}
 
 footer {
     text-align: center;
-    padding: 20px; /* Adjust to make it consistent */
+    padding: 20px;
     background-color: #333;
     color: #fff;
     font-size: 1.2em;
@@ -56,3 +60,114 @@ footer a {
     text-decoration: none;
 }
 
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px; /* Reduce padding */
+        flex-direction: row; /* Ensure items are in a row */
+        justify-content: space-between; /* Adjust alignment */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce space between items */
+    }
+
+    .logo-container img {
+        width: 100px; /* Smaller logo for mobile */
+    }
+
+    .banner-text {
+        text-align: left; /* Ensure text aligns well */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px; /* Further reduce padding for smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Smaller font size */
+    }
+
+    .logo-container img {
+        width: 80px; /* Even smaller logo for extra small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        display: flex;
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center the content */
+        padding: 10px;
+    }
+
+    .about-content img {
+        width: 90%; /* Adjust image width for mobile */
+        height: auto;
+        margin-bottom: 15px; /* Add space below the image */
+    }
+
+    .about-text {
+        max-width: 100%; /* Ensure text takes up full width */
+        text-align: left; /* Align text for readability */
+        padding: 10px; /* Add padding for better spacing */
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 480px) {
+    .about-content {
+        padding: 5px;
+    }
+
+    .about-content img {
+        width: 100%; /* Make image take up full width */
+    }
+
+    .about-text {
+        font-size: 0.9em; /* Slightly reduce text size */
+    }
+}
+
+@media (max-width: 768px) {
+    .history-content {
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .history-content img {
+        width: 90%; /* Adjust image width for better mobile view */
+        height: auto;
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    .history-text {
+        max-width: 100%; /* Make text take full width */
+        text-align: left; /* Align text for readability */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-content {
+        padding: 5px;
+    }
+
+    .history-text {
+        font-size: 0.9em; /* Reduce text size for smaller screens */
+    }
+
+    .history-content img {
+        width: 100%; /* Make image take full width */
+    }
+}

@@ -2,6 +2,7 @@ body {
     background-color: #000; /* Sets the background to black */
     color: #fff; /* Sets the text color to white for better readability */
 }
+
 .menu-content {
     margin-top: 30px; /* Adjust this to move it lower */
     text-align: center; /* Center the text */
@@ -34,7 +35,7 @@ body {
     flex: 0 0 auto; /* Ensure items don't shrink */
     width: 250px; /* Adjust width as necessary */
     border: 1px solid #444;
-    padding: 10px;
+    padding: 15px; /* Adjust padding for better spacing */
     background-color: #222;
     color: #fff;
     border-radius: 8px;
@@ -43,6 +44,7 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     text-overflow: ellipsis;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
 }
 
 .menu-item h3, .menu-item p {
@@ -51,8 +53,9 @@ body {
     margin: 5px 0;
     white-space: normal;
 }
+
 .menu-item img {
-    width: 100px;
+    width: 100%; /* Full width for images */
     height: auto;
     display: block;
     margin-bottom: 10px;
@@ -61,16 +64,75 @@ body {
 
 .menu-section {
     width: 100%;
-    text-align: left; 
+    text-align: center; /* Center-align section titles */
 }
+
 .menu-section h2 {
     margin-top: 20px; /* Adjust this value to move the heading down */
+    font-size: 1.8em; /* Adjust font size */
+    color: #fff; /* Ensure title color matches */
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
+    width: 90%; /* Adjust width for better fit */
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 50px 20px; /* Adjust margins for smaller screens */
+    }
+
+    .menu-page {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        padding: 10px;
+    }
+
+    .menu-item {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .menu-item h3 {
+        font-size: 1.3em;
+    }
+
+    .menu-item p {
+        font-size: 0.9em;
+    }
+
+    .menu-section {
+        margin-top: 80px; /* Add space above the section for mobile view */
+    }
+
+    .menu-section h2 {
+        margin-top: 60px; /* Adjust this value for spacing below the title */
+        font-size: 1.5em; /* Slightly reduce the font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        padding: 10px;
+    }
+
+    .menu-item h3 {
+        font-size: 1.2em;
+    }
+
+    .menu-item p {
+        font-size: 0.85em;
+    }
+    .menu-section {
+        margin-top: 40px; /* Increase space above the section for smaller screens */
+    }
+
+    .menu-section h2 {
+        font-size: 1.3em; /* Reduce font size for extra small screens */
+    }
 }

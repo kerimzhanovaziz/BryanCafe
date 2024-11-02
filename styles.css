@@ -61,26 +61,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -10px; /* Adjust this value as needed */
-    margin-left: 20px; /* Adjust this value as needed */
-    padding: 40px; /* Increase padding for a larger section */
+    margin-top: -10px; 
+    margin-left: 20px; 
+    padding: 40px; 
 }
-
 .about img {
-    width: 500px; /* Adjust width as needed */
-    height: auto;/* Keeps aspect ratio */
+    width: 500px; 
+    height: auto;
 }
 
 .about-text {
-    width: 60%; /* Adjust width as needed */
-    color: #ffffff; /* Ensure text is readable on black background */
+    width: 60%; 
+    color: #ffffff; 
 }
 .about-content h2 {
-    font-size: 3em; /* Increase the font size of the "About" heading */
-    color: #1ABC9C; /* Adjust color if needed */
+    font-size: 3em; 
+    color: #1ABC9C; 
 }
 .about-content p {
-    font-size: 1.5em; /* Increase the font size of the description */
+    font-size: 1.5em; 
     line-height: 1.6; /* Adjust line height for better readability */
 }
 

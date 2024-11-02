@@ -1,10 +1,16 @@
 main {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin-top: 100px;
-    margin-left: 100px;
+    align-items: center; /* Center content */
+    margin-top: 150px;
+    margin-left: auto; /* Auto margin for centering */
+    margin-right: auto;
     margin-bottom: 100px;
+    width: 90%; /* Adjust width for better fit */
+}
+
+.branches-section {
+    margin-top: 30px; /* Add space above the branches section */
 }
 
 /* General form styling */
@@ -90,3 +96,61 @@ main {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    main {
+        margin: 50px 20px; /* Adjust margins for smaller screens */
+    }
+
+    .enquiry-form {
+        max-width: 95%; /* Make the form almost full width on mobile */
+        width: 95%; /* Ensure it takes up most of the screen */
+        padding: 20px; /* Adjust padding for mobile */
+        margin: 0 auto 30px auto; /* Center the form */
+    }
+    .enquiry-form input,
+    .enquiry-form textarea {
+        max-width: 100%; /* Ensure input fields take the full width of the form */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .enquiry-form button {
+        padding: 12px 24px; /* Keep button size proportional */
+        width: 100%; /* Make the button take the full width */
+    }
+
+    .branches-section {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .enquiry-form h2 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+    .enquiry-form {
+        margin-top: 20px; /* Adjust this value for more space in the mobile view */
+    }
+    main h1 {
+        margin-top: 100px; /* Adjust this value for spacing on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .enquiry-form button {
+        padding: 10px 20px; /* Reduce button padding */
+    }
+    main h1 {
+        margin-top: 50px; /* Adjust this value for spacing on mobile */
+    }
+    .enquiry-form input,
+    .enquiry-form textarea {
+        padding: 8px; /* Adjust padding for smaller inputs */
+    }
+
+    .enquiry-form h2 {
+        margin-top: 50px;
+        font-size: 1.3em; /* Reduce font size */
+    }
+    .enquiry-form {
+        max-width: 100%; /* Form takes up full width on very small screens */
+        padding: 15px; /* Reduce padding for very small screens */
+    }
+}
