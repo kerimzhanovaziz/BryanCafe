@@ -1,0 +1,92 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+/* General form styling */
+.enquiry-form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    max-width: 600px;
+    margin-bottom: 30px;
+    
+}
+.enquiry-form label,
+.enquiry-form input,
+.enquiry-form textarea {
+    width: 100%; /* Make form elements take up the full width */
+    max-width: 580px; /* Optional: Limit the max width of form elements */
+    margin-bottom: 10px; /* Add space between form elements */
+}
+
+.enquiry-form h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.enquiry-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+}
+
+.enquiry-form button {
+    background-color: #1ABC9C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enquiry-form button:hover {
+    background-color: #16a085;
+}
+
+/* Branch section styling */
+.branches-section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.branch-item {
+    margin-bottom: 20px;
+}
+
+.branch-item h3 {
+    color: #1ABC9C;
+    margin-bottom: 10px;
+}
+
+.branch-item p {
+    margin-bottom: 5px;
+}
+
+.branch-item a {
+    color: #1ABC9C;
+    text-decoration: none;
+}
+
+.branch-item a:hover {
+    text-decoration: underline;
+}
+

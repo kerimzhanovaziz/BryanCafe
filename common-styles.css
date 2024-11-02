@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    color: #fff;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    padding: 30px;
+    padding-left: 500px;
+    display: flex;
+    justify-content: center; /* Center-aligns the nav items */
+    z-index: 3;
+}
+
+nav h1 {
+    display: none; /* Hides the logo if it's not needed */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 300px;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 100px; /* Space between the items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px; /* Adjust to make it consistent */
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #1ABC9C;
+    text-decoration: none;
+}
+

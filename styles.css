@@ -1,0 +1,117 @@
+
+
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 600px; /* Adjust the height as needed */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%; /* Ensures the image fills the entire banner height */
+    object-fit: cover;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Adjust this value as needed to control horizontal positioning */
+    transform: translateY(-50%); /* Only vertically centers the content */
+    color: #fff;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: left; /* Align text to the left */
+}
+
+.banner-text h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.banner-text p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    max-width: 500px; /* Limit the width to make it look structured */
+}
+
+.highlight {
+    color: #1ABC9C; /* Adjust to match your design */
+}
+
+
+.about {
+    background-color: black;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px; /* Adjust this value as needed */
+    margin-left: 20px; /* Adjust this value as needed */
+    padding: 40px; /* Increase padding for a larger section */
+}
+
+.about img {
+    width: 500px; /* Adjust width as needed */
+    height: auto;/* Keeps aspect ratio */
+}
+
+.about-text {
+    width: 60%; /* Adjust width as needed */
+    color: #ffffff; /* Ensure text is readable on black background */
+}
+.about-content h2 {
+    font-size: 3em; /* Increase the font size of the "About" heading */
+    color: #1ABC9C; /* Adjust color if needed */
+}
+.about-content p {
+    font-size: 1.5em; /* Increase the font size of the description */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0; /* Adjust as needed */
+    padding: 100px; /* Increase padding for a larger section */
+    background-color: #000; /* Match the dark background */
+    color: #fff; /* Ensure text is visible */
+}
+
+.history-content img {
+    width: 600px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    margin-left: 10px; /* Add space between image and text */
+}
+
+
+.history-content p {
+    font-size: 1.5em; /* Increase text size */
+    line-height: 1.6; /* Adjust for readability */
+    margin-left: 20px; /* Ensure text has space from container edge */
+}
+
+.history-content h2 {
+    font-size: 3em; /* Increase heading size */
+    color: #1ABC9C; /* Match the highlight color */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
