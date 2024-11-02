@@ -1,12 +1,9 @@
 
 
-// Handle form submission
 function handleFormSubmit(event) {
     event.preventDefault();
     alert('Your message has been sent!');
-    event.target.reset(); // Optional: Resets the form after submission
-}
-// Define the displayItems function before the DOMContentLoaded event listener
+    event.target.reset(); }
 function displayItems(items, containerId) {
     const container = document.getElementById(containerId);
     Array.from(items).forEach(item => {
@@ -27,7 +24,6 @@ function displayItems(items, containerId) {
         container.appendChild(itemElement);
     });
 }
-// Run fetch logic only if menu containers exist
 if (document.getElementById('meals-slider') || document.getElementById('beverages-slider') || document.getElementById('other-beverages-slider')) {
     fetch('menu.xml')
         .then(response => response.text())
@@ -43,15 +39,13 @@ if (document.getElementById('meals-slider') || document.getElementById('beverage
             console.log('Beverages:', beverages.length);
             console.log('Other Beverages:', otherBeverages.length);
 
-            // Display items if containers exist
-            if (document.getElementById('meals-slider')) displayItems(meals, 'meals-slider');
+                        if (document.getElementById('meals-slider')) displayItems(meals, 'meals-slider');
             if (document.getElementById('beverages-slider')) displayItems(beverages, 'beverages-slider');
             if (document.getElementById('other-beverages-slider')) displayItems(otherBeverages, 'other-beverages-slider');
         })
         .catch(error => console.error('Error loading menu XML:', error));
 }
 
-// Run fetch logic only if branches section exists
 if (document.getElementById('branches-section')) {
     fetch('branches.xml')
         .then(response => response.text())
