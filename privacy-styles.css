@@ -4,73 +4,73 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 100px auto; /* Adjust for spacing */
-    max-width: 800px; /* Set a maximum width if needed */
-    color: #fff; /* Ensure text color matches the overall theme */
+    margin: 100px auto; 
+    max-width: 800px; 
+    color: #fff; 
 }
 
 .privacy-policy-section h1 {
     font-size: 2.5em;
-    margin-bottom: 20px; /* Space below the heading */
+    margin-bottom: 20px; 
 }
 
 .privacy-policy-section p {
     font-size: 1.2em;
-    margin-bottom: 15px; /* Space between paragraphs */
-    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px; 
+    line-height: 1.6; 
 }
 body, html {
-    height: 100%; /* Ensure the body and HTML take up the full height of the viewport */
+    height: 100%; 
     margin: 0;
     display: flex;
     flex-direction: column;
 }
 
 main {
-    flex: 1; /* This makes the main content area grow and take available space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
+    justify-content: center; 
+    align-items: center; 
 }
 
 footer {
-    background-color: #333; /* Match your footer background color */
+    background-color: #333; 
     color: #fff;
     text-align: center;
     padding: 20px;
-    width: 100%; /* Ensure the footer takes full width */
+    width: 100%; 
 }
 
-/* Responsive Design for Mobile */
+
 @media (max-width: 768px) {
     .privacy-policy-section {
-        margin: 50px 20px; /* Adjust margin for smaller screens */
-        max-width: 100%; /* Use full width on smaller screens */
-        padding: 10px; /* Add padding for better spacing */
+        margin: 50px 20px; 
+        max-width: 100%; 
+        padding: 10px; 
     }
 
     .privacy-policy-section h1 {
-        font-size: 2em; /* Reduce heading size for smaller screens */
+        font-size: 2em; 
     }
 
     .privacy-policy-section p {
-        font-size: 1em; /* Reduce paragraph font size */
-        line-height: 1.5; /* Adjust line height for readability */
+        font-size: 1em; 
+        line-height: 1.5; 
     }
 }
 
 @media (max-width: 480px) {
     .privacy-policy-section {
-        margin: 30px 10px; /* Further adjust margin for very small screens */
-        padding: 5px; /* Reduce padding for smaller screens */
+        margin: 30px 10px; 
+        padding: 5px; 
     }
 
     .privacy-policy-section h1 {
-        font-size: 1.8em; /* Further reduce heading size */
+        font-size: 1.8em; 
     }
 
     .privacy-policy-section p {
-        font-size: 0.9em; /* Reduce paragraph font size for extra small screens */
+        font-size: 0.9em; 
     }
 }

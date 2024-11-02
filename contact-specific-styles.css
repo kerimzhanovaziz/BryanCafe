@@ -105,13 +105,13 @@ main {
     .enquiry-form button {
         padding: 10px 20px;     }
     main h1 {
-        margin-top: 50px;     }
+        margin-top: 150px;     }
     .enquiry-form input,
     .enquiry-form textarea {
         padding: 8px;     }
 
     .enquiry-form h2 {
-        margin-top: 50px;
+        margin-top: 10px;
         font-size: 1.3em;     }
     .enquiry-form {
         max-width: 100%;         padding: 15px;     }
