@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Verdana', sans-serif; /* Changed font */
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #F6EBDA;
+    color: #000000;
 }
 
 html {
@@ -12,35 +12,53 @@ html {
 }
 
 nav {
-    position: absolute;
+    position: relative; /* Changed from absolute to relative */
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
-    color: #fff;
-    padding: 30px 20px; 
+    background-color: rgba(255, 255, 255, 0.8); /* Added subtle background color with opacity */
+    color: #333333; /* Changed to a darker shade for contrast */
+    padding: 20px 40px; /* Adjusted padding */
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; /* Centered navigation */
     align-items: center;
     z-index: 3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
+    margin: 0 auto; 
     padding: 0;
-    margin-right: 150px;
+    
 }
 
 nav ul li {
-    margin-left: 70px; 
+    margin-left: 50px; /* Reduced margin between items */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* No margin for the first item */
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333333; /* Changed color */
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em; /* Increased font size */
+    padding: 5px 10px; /* Added padding around links */
+    border-radius: 5px; /* Added rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Added hover transition */
+}
+
+nav ul li a:hover {
+    background-color: #FF902B; /* Added hover background */
+    color: #ffffff; /* Changed hover text color */
+}
+
+nav ul li a.active {
+    background-color: #FF902B; /* Changed to match hover for consistency */
+    color: #ffffff; /* White text on active link */
 }
 
 .logo-container {
@@ -51,15 +69,14 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
-    color: #fff;
+    color: #000000;
     font-size: 1.2em;
 }
 
 footer a {
-    color: #1ABC9C;
+    color: #FF902B;
     text-decoration: none;
 }
-
 
 @media (max-width: 768px) {
     nav {
@@ -121,7 +138,6 @@ footer a {
         padding: 10px; 
     }
 }
-
 
 @media (max-width: 480px) {
     .about-content {

@@ -3,72 +3,72 @@
         <name>Beetroot and Feta Salad</name>
         <price>15.00</price>
         <description>Suitable for vegetarians, made with fresh beetroot</description>
-        <image>images/Beetroot_and_feta_salad.png</image>
+        <image>images/BeetSalad.jpg</image>
     </meal>
     <meal>
         <name>Sourdough Rye Sandwich</name>
         <price>18.00</price>
         <description>Cheese and salad sandwich made with organic, sourdough rye bread</description>
-        <image>images/Sourdough.png</image>
+        <image>images/Sour.png</image>
     </meal>
     <meal>
         <name>Spinach Pie and Salad</name>
         <price>20.00</price>
         <description>Tasty pie with salad</description>
-        <image>images/spinach.png</image>
+        <image>images/SpinPie03.jpg</image>
     </meal>
     <meal>
         <name>Feta Pancakes with Salad</name>
         <price>19.50</price>
         <description>Tasty pancake filled with feta and salad</description>
-        <image>images/feta.png</image>
+        <image>images/foodfu.webp</image>
     </meal>
     <beverage>
         <name>Coffee and Hot Chocolates (Small)</name>
         <price>3.50</price>
         <description>For coffee, please inform the staff of the coffee type</description>
-        <image>images/coffee_s.png</image>
+        <image>images/Cof_choc.png</image>
     </beverage>
     <beverage>
         <name>Coffee and Hot Chocolates (Regular)</name>
         <price>4.00</price>
         <description>For coffee, please inform the staff of the coffee type</description>
-        <image>images/coffee_m.png</image>
+        <image>images/Cofe_regul.png</image>
     </beverage>
     <beverage>
         <name>Coffee and Hot Chocolates (Large)</name>
         <price>4.50</price>
         <description>For coffee, please inform the staff of the coffee type</description>
-        <image>images/coffee_l.png</image>
+        <image>images/Cof_choc_large.png</image>
     </beverage>
     <otherBeverage>
         <name>Fresh Juice</name>
         <price>3.00</price>
         <description>Freshly squeezed juice</description>
-        <image>images/juice.png</image>
+        <image>images/squez.png</image>
     </otherBeverage>
     <otherBeverage>
         <name>Bottled Water</name>
         <price>2.00</price>
         <description>Refreshing bottled water</description>
-        <image>images/bottled.png</image>
+        <image>images/Sbottle.png</image>
     </otherBeverage>
     <otherBeverage>
         <name>Soda</name>
         <price>3.00</price>
         <description>Refreshing soda</description>
-        <image>images/soda.png</image>
+        <image>images/so.png</image>
+    </otherBeverage>
+<otherBeverage>
+        <name>Energy Drink</name>
+        <price>5.00</price>
+        <description>A revitalizing energy drink to boost your day</description>
+        <image>images/energy.png</image>
     </otherBeverage>
     <otherBeverage>
-        <name>Special Smoothie</name>
-        <price>6.00</price>
-        <description>A delicious blend of fruits for a refreshing taste</description>
-        <image>images/smoothie.png</image>
-    </otherBeverage>
-    <otherBeverage>
-        <name>Herbal Tea</name>
-        <price>4.00</price>
-        <description>Calming herbal tea with natural flavors</description>
-        <image>images/tea.png</image>
+        <name>Iced Latte</name>
+        <price>4.50</price>
+        <description>A chilled coffee delight for a refreshing break</description>
+        <image>images/latte.png</image>
     </otherBeverage>
 </menu>

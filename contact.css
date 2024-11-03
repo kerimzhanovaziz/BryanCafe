@@ -5,7 +5,9 @@ main {
     margin-top: 200px;     margin-bottom: 100px; 
     margin-left: 50px;
 }
-
+.logo-container {
+    margin-left: 70px; /* Adjust the value as needed */
+}
 .branches-section {
     margin-top: 30px; }
 
@@ -36,7 +38,7 @@ main {
 }
 
 .enquiry-form button {
-    background-color: #1ABC9C;
+    background-color: #FF902B;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -45,7 +47,7 @@ main {
 }
 
 .enquiry-form button:hover {
-    background-color: #16a085;
+    background-color: #FF902B;
 }
 
 .branches-section {
@@ -60,7 +62,7 @@ main {
 }
 
 .branch-item h3 {
-    color: #1ABC9C;
+    color: #FF902B;
     margin-bottom: 10px;
 }
 
@@ -69,7 +71,7 @@ main {
 }
 
 .branch-item a {
-    color: #1ABC9C;
+    color: #FF902B;
     text-decoration: none;
 }
 

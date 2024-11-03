@@ -1,16 +1,19 @@
 
-
-
+.logo-container {
+    margin-left: 70px; /* Adjust the value as needed */
+}
 .banner {
     position: relative;
     text-align: center;
-    color: #fff;
+    color: #000000;
     height: 600px; /* Adjust the height as needed */
 }
 
 .banner img {
-    width: 100%;
-    height: 100%; /* Ensures the image fills the entire banner height */
+    margin-top: 170px;
+    margin-left: 550px;
+    width: 50%;
+    height: 50%; /* Ensures the image fills the entire banner height */
     object-fit: cover;
 }
 
@@ -21,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background-color: F6EBDA; /* Dark overlay */
     z-index: 1;
 }
 
@@ -30,7 +33,7 @@
     top: 50%;
     left: 10%; /* Adjust this value as needed to control horizontal positioning */
     transform: translateY(-50%); /* Only vertically centers the content */
-    color: #fff;
+    color: #000000;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: left; /* Align text to the left */
@@ -48,69 +51,67 @@
 }
 
 .highlight {
-    color: #1ABC9C; /* Adjust to match your design */
+    color: #FF902B; /* Adjust to match your design */
 }
 
 
 .about {
-    background-color: black;
+    background-color: F6EBDA;
     padding: 20px;
 }
 
 .about-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: -10px; 
     margin-left: 20px; 
     padding: 40px; 
 }
 .about img {
-    width: 500px; 
+    width: 300px; 
     height: auto;
+    margin-right:10px;
 }
 
 .about-text {
     width: 60%; 
-    color: #ffffff; 
+    color: #000000; 
 }
 .about-content h2 {
     font-size: 3em; 
-    color: #1ABC9C; 
+    color: #FF902B; 
 }
 .about-content p {
     font-size: 1.5em; 
-    line-height: 1.6; /* Adjust line height for better readability */
+    line-height: 1.6;
 }
 
 
 .history-content {
     display: flex;
+    flex-direction: row; 
     align-items: center;
     justify-content: space-between;
-    margin-top: 0; /* Adjust as needed */
-    padding: 100px; /* Increase padding for a larger section */
-    background-color: #000; /* Match the dark background */
-    color: #fff; /* Ensure text is visible */
+    margin-top: -10px; 
+    margin-left: 20px; 
+    padding: 40px;
 }
 
+
 .history-content img {
-    width: 600px; /* Adjust width as needed */
+    width: 500px; 
     height: auto;
-    border-radius: 10px; /* Rounded corners */
-    margin-left: 10px; /* Add space between image and text */
 }
 
 
 .history-content p {
-    font-size: 1.5em; /* Increase text size */
-    line-height: 1.6; /* Adjust for readability */
-    margin-left: 20px; /* Ensure text has space from container edge */
+    font-size: 1.5em; 
+    line-height: 1.6;
 }
 
 .history-content h2 {
-    font-size: 3em; /* Increase heading size */
-    color: #1ABC9C; /* Match the highlight color */
-    margin-bottom: 20px; /* Add space below heading */
+    font-size: 3em; 
+    color: #FF902B; 
 }
 
